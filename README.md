@@ -33,7 +33,7 @@ $ rosrun mypkg twice.py
 ## 実行結果
  Youtube https://www.youtube.com/watch?v=xc0hnqJGaRw
 ## 文責
-　- Hana Ikushima
+  - Hana Ikushima
 　- s20C1006NU@s.chibakoudai.jp
 ## ライセンス
 　"mypkg" is under GNU General Public License v3.0.
