@@ -9,7 +9,7 @@
 - ROS Noetic
 
 ## 実行手順
-、、、
+```
 1.ディレクトリに入る
 $ cd ~/catkin_ws/src
 2.リポジトリをクローンする
@@ -33,4 +33,10 @@ $ roscore mypkg count.py
 $ rosrun mypkg twice.py
 $ rosrun mypkg three.py
 $ rosrun mypkg four.py
-、、、 
+```
+## 実行結果
+## 文責
+　- Hana Ikushima
+　- s20C1006NU@s.chibakoudai.jp
+　
+
