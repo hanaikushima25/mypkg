@@ -1,7 +1,7 @@
 # robosys_kadai2
 
 ## 概要
-5つのノードを動かし、二倍三倍四倍した結果を表示する
+2つのノードを動かし、二倍した結果を表示する
 
 ## 動作環境
 - Raspberry Pi 4 Computer Model B
@@ -13,7 +13,7 @@
 1.ディレクトリに入る
 $ cd ~/catkin_ws/src
 2.リポジトリをクローンする
-$ git clone https://github.com/yukikimuramura/robosys_2020_kadai02.git
+$ git clone 
 3.一つ前のリポジトリに戻る
 $ cd ..
 4.コンパイルする
