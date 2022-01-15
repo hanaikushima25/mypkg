@@ -15,7 +15,7 @@ $ cd ~/catkin_ws/src
 ```
 2.リポジトリをクローンする
 ```
-$ git clone git@github.com:hanaikushima25/robosys_kadai2.git
+$ git clone git@github.com:hanaikushima25/mypkg.git
 ```
 3.一つ前のリポジトリに戻る
 ```
