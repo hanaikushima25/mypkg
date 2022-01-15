@@ -33,19 +33,21 @@ $ roscore &
 ```
 $ cd ~/catkin_ws/src/mypkg/scripts/
 ```
-7.実行できるようにそれぞれのプログラムのパーミッションを設定する
+7.count.pyを実行する
 ```
-$ chmod +x count.py       
-$ chmod +x twice.py     
-```
-8.count.pyを実行する
-```
+$ chmod +x count.py   
 $ roscore mypkg count.py
 ```
-9.twice.pyを別の端末で実行する
+8.twice.pyを別の端末で実行する
 ```
+$ chmod +x twice.py 
 $ rosrun mypkg twice.py
 ```
+9.また別の端末で実行する
+```
+$ rostopic echo /twice.py
+```
+停止する場合はctrl + c
 ## 実行結果
  Youtube https://www.youtube.com/watch?v=xc0hnqJGaRw
 ## 文責
