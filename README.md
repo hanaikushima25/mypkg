@@ -11,41 +11,41 @@
 ## 実行手順
 1.ディレクトリに入る
 ```
-$ cd ~/catkin_ws/src
+ cd ~/catkin_ws/src
 ```
 2.リポジトリをクローンする
 ```
-$ git clone git@github.com:hanaikushima25/mypkg.git
+ git clone git@github.com:hanaikushima25/mypkg.git
 ```
 3.一つ前のリポジトリに戻る
 ```
-$ cd ..
+ cd ..
 ```
 4.コンパイルする
 ```
-$ catkin_make
+ catkin_make
 ```
 5.rosを起動する
 ```
-$ roscore &
+ roscore &
 ```
 6.ディレクトリに入る
 ```
-$ cd ~/catkin_ws/src/mypkg/scripts/
+ cd ~/catkin_ws/src/mypkg/scripts/
 ```
 7.count.pyを実行する
 ```
-$ chmod +x count.py   
-$ roscore mypkg count.py
+ chmod +x count.py   
+ roscore mypkg count.py
 ```
 8.twice.pyを別の端末で実行する
 ```
-$ chmod +x twice.py 
-$ rosrun mypkg twice.py
+ chmod +x twice.py 
+ rosrun mypkg twice.py
 ```
 9.また別の端末で実行する
 ```
-$ rostopic echo /twice.py
+ rostopic echo /twice.py
 ```
 停止する場合はctrl + c
 ## 実行結果
