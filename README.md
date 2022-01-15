@@ -9,7 +9,6 @@
 - ROS Noetic
 
 ## 実行手順
-```
 1.ディレクトリに入る
 ```
 $ cd ~/catkin_ws/src
