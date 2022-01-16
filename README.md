@@ -16,46 +16,42 @@
  cd ~/catkin_ws/src
  catkin_init_workspace
 ```
-2. CMakeLists.txtがあるか確認する
-```
- ls
-```
-3. .bashrcの下から三行目に以下の文を入れる
+2. .bashrcの下から三行目に以下の文を入れる
 ```
  source ~/catkin_ws/devel/setup.bash
 ```
-4.環境のビルドをする
+3.環境のビルドをする
 ```
  cd ~/catkin_ws
  catkin_make
  source ~/.bashrc
 ```
-5.パッケージを作成する
+4.パッケージを作成する
 ```
  cd ~/catkin_ws/src
  catkin_create_pkg mypkg rospy
 ```
-6.パッケージ内にscriptsというディレクトリを作成し、ノードとなるプログラムを置く
+5.パッケージ内にscriptsというディレクトリを作成し、ノードとなるプログラムを置く
 ```
  cd mypkg/
  mkdir scripts
  cd scripts/
 ```
-7.ROSを立ち上げる
+6.ROSを立ち上げる
 ```
  roscore &
 ```
-8.count.pyを実行する
+7.count.pyを実行する
 ```
  chmod +x count.py   
  roscore mypkg count.py
 ```
-9.twice.pyを別の端末で実行する
+8.twice.pyを別の端末で実行する
 ```
  chmod +x twice.py 
  rosrun mypkg twice.py
 ```
-10.また別の端末で実行する
+9.また別の端末で実行する
 ```
  rostopic echo /twice.py
 ```
