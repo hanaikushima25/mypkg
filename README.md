@@ -12,11 +12,19 @@
 1.ディレクトリに入る
 ```
  cd ~/catkin_ws/src
+```
 2.リポジトリをクローンする
+```
+ git clone git@github.com:hanaikushima25/mypkg.git
+```
 3.一つ前のリポジトリに戻る
+```
  cd ..
+```
 4.コンパイルする
+```
  catkin_make
+```
 5.ROSを立ち上げる
 ```
  roscore &
