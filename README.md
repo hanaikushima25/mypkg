@@ -9,49 +9,29 @@
 - ROS Noetic
 
 ## 実行手順
-1.ディレクトリを作成する
+1.ディレクトリに入る
 ```
- cd 
- mkdir -p catkin_ws/src
  cd ~/catkin_ws/src
- catkin_init_workspace
-```
-2. .bashrcの下から三行目に以下の文を入れる
-```
- source ~/catkin_ws/devel/setup.bash
-```
-3.環境のビルドをする
-```
- cd ~/catkin_ws
+2.リポジトリをクローンする
+3.一つ前のリポジトリに戻る
+ cd ..
+4.コンパイルする
  catkin_make
- source ~/.bashrc
-```
-4.パッケージを作成する
-```
- cd ~/catkin_ws/src
- catkin_create_pkg mypkg rospy
-```
-5.パッケージ内にscriptsというディレクトリを作成し、ノードとなるプログラムを置く
-```
- cd mypkg/
- mkdir scripts
- cd scripts/
-```
-6.ROSを立ち上げる
+5.ROSを立ち上げる
 ```
  roscore &
 ```
-7.count.pyを実行する
+6.count.pyを実行する
 ```
  chmod +x count.py   
  roscore mypkg count.py
 ```
-8.twice.pyを別の端末で実行する
+7.twice.pyを別の端末で実行する
 ```
  chmod +x twice.py 
  rosrun mypkg twice.py
 ```
-9.また別の端末で実行する
+8.また別の端末で実行する
 ```
  rostopic echo /twice.py
 ```
